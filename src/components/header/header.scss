@@ -1,0 +1,61 @@
+header {
+  color: #9f9f9f;
+  position: relative;
+
+  ul {
+    border-bottom: 2px solid #dcdcdc;
+    margin: 0 auto;
+    padding: 8px 0;
+    width: calc(100vw - 40px);
+
+    li {
+      display: block;
+      padding: 5px 0px;
+
+      @media screen and (min-width: 816px) {
+        display: inline-block;
+        padding: 5px 20px;
+      }
+
+      @media screen and (min-width: 910px) {
+        padding: 5px 25px;
+      }
+
+      @media screen and (min-width: 1180px) {
+        padding: 5px 45px;
+      }
+
+      button {
+        background: transparent;
+        border: none;
+        color: #9f9f9f;
+        font-size: 14px;
+      }
+
+      &.active {
+        button {
+          span {
+            color: #000;
+            &:hover,
+            &:focus {
+              color: #000;
+            }
+          }
+        }
+      }
+
+      button {
+        span {
+          &:hover,
+          &:focus {
+            color: #4b86c2;
+            cursor: pointer;
+            &.active {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}

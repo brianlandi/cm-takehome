@@ -1,0 +1,16 @@
+.sliderBar {
+  background-color: black;
+  position: absolute;
+  transition: all 300ms ease-in-out;
+
+  &.sliderBarMobile {
+    left: 40px;
+    width: 2px;
+  }
+
+  &.sliderBarDesktop {
+    bottom: 0px;
+    display: none;
+    height: 2px;
+  }
+}
